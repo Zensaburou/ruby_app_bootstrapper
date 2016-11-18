@@ -1,0 +1,6 @@
+# RVM
+.ruby-*
+
+# VIM
+.swo
+.swp

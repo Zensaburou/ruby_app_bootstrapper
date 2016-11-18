@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "Running RSpec"
+
+bundle exec rspec spec
+spec=$?
+
+if [ $spec -eq 0 ]; then
+  echo "Tests are green, pushing..."
+  exit 0
+else
+  echo "I'm seeing red. Use --no-verify to force push, if you have no fear"
+  exit 1
+fi
